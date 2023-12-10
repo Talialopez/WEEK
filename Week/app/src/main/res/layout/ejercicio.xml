@@ -68,7 +68,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="#FFC774"
-            android:text="Crear nuevo calendario"
+            android:text="Crear ejercicio"
             android:textColor="#000000"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -93,88 +93,29 @@
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
             android:backgroundTint="#FFC774"
-            android:text="Agosto"
+            android:text="Seleccionar ejercicio"
             android:textSize="18dp"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/button1"
             app:layout_constraintTop_toBottomOf="@+id/button1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="419dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="LUNES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-            <ImageButton
-                android:id="@+id/botonAbajo1"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:background="#FFC774"
-                android:contentDescription="Menu"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/casita"
-                />
-        <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.33"
-            />
-
-            <ImageButton
-                android:id="@+id/botonAbajo2"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:background="#FFC774"
-                android:contentDescription="Menu"
-                app:layout_constraintStart_toEndOf="@+id/guideline"
-                app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/pesas"
-                />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.67" />
-
-            <ImageButton
-                android:id="@+id/botonAbajo3"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:background="#FFC774"
-                android:contentDescription="Perfil"
-                app:layout_constraintStart_toEndOf="@+id/guideline2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/perfil"
-                />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:text="¿Qué deseas hacer?"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-            app:layout_constraintVertical_bias="2" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
