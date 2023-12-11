@@ -167,7 +167,7 @@
         android:layout_marginBottom="56dp"
         android:backgroundTint="#FFC774"
         android:text="Enviar"
-        android:textColor="@color/black"
+        android:textColor="@android:color/black"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -26,9 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text=   "¡Mensaje Enviado
+        android:text="¡Mensaje Enviado
                         con éxito!"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
