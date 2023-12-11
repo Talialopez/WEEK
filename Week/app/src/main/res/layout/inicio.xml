@@ -6,102 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        tools:ignore="ExtraText">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="731dp"
+        android:contentDescription="fondo de la aplicación"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/fondo" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="147dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="628dp"
+        android:contentDescription="logo blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo" />
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="176dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="544dp"
+        android:contentDescription="texto logo blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/week" />
 
-        <!-- FONDO -->
+    <TextView
+        android:id="@+id/textViewBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:letterSpacing="0"
+        android:lineHeight="48sp"
+        android:text="¡Bienvenido!"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="731dp"
-            android:contentDescription="fondo de la aplicación"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/fondo" />
-
-
-        <!--LOGO -->
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="147dp"
-            android:layout_height="58dp"
-            android:layout_marginEnd="132dp"
-            android:layout_marginBottom="628dp"
-            android:contentDescription="logo blanco"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/logo" />
-
-        <!-- TEXTO LOGO -->
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="176dp"
-            android:layout_height="124dp"
-            android:layout_marginEnd="116dp"
-            android:layout_marginBottom="544dp"
-            android:contentDescription="texto logo blanco"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/week" />
-
-        <!-- TEXTO -->
-        <TextView
-            android:id="@+id/textViewBienvenido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="232dp"
-            android:letterSpacing="0"
-            android:lineHeight="48sp"
-            android:text="¡Bienvenido!"
-            android:textAlignment="viewStart"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-
-        <!-- BOTON LOGIN -->
-
-        <Button
-            android:id="@+id/botonLogin"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#FDB74E"
-            android:text="Registrate con correo electrónico"
-            android:textColor="#000000"
-            android:textSize="16.5sp"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="555dp"
-            tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FDB74E"
+        android:text="Registrate con correo electrónico"
+        android:textColor="#000000"
+        android:textSize="16.5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/botonLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="104dp"
-            android:background="@android:color/transparent"
-            android:text="¿Ya tienes una cuenta? Inicia sesión"
-            android:textColor="#FFFFFF"
-            android:textSize="16.5sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido"
-            tools:ignore="DuplicateIds" />
-
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/transparent"
+        android:text="¿Ya tienes una cuenta? Inicia sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="16.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido"
+        tools:ignore="DuplicateIds" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
