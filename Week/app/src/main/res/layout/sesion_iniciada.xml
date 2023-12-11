@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080C20"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#080C20"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="450dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="724dp"
+            android:background="#FDB74E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37"
+            tools:ignore="ExtraText">
+
+            <ImageButton
+                android:id="@+id/botonMenu"
+                android:layout_width="127dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="menu"
+                app:srcCompat="@drawable/menu"
+                tools:ignore="ExtraText,MissingConstraints"
+                tools:layout_editor_absoluteX="316dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="160dp"
+                android:layout_height="151dp"
+                app:srcCompat="@drawable/logofondo"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="-13dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="419dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                android:id="@+id/botonAbajo1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFC774"
+                android:contentDescription="Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/casita"
+                />
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="282dp" />
+
+            <ImageButton
+                android:id="@+id/botonAbajo2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFC774"
+                android:contentDescription="Menu"
+                app:layout_constraintStart_toEndOf="@+id/guideline"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/pesas"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="280dp" />
+
+            <ImageButton
+                android:id="@+id/botonAbajo3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFC774"
+                android:contentDescription="Perfil"
+                app:layout_constraintStart_toEndOf="@+id/guideline2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/perfil"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

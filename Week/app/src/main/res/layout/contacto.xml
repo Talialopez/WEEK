@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080C20"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="450dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="724dp"
+        android:background="#FDB74E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/TextoMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="4dp"
+            android:background="#00000000"
+            android:text="Contacto"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.321" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:contentDescription="Retroceder"
+            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
+            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
+            app:srcCompat="@drawable/fle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/ayudaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="  ¡Estamos aquí para ayudarte! "
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="89dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/preguntaTextView"
+        android:layout_width="366dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:justificationMode="inter_word"
+        android:text="Si tienes alguna pregunta, comentario o necesitas asistencia, no dudes en ponerte en contacto con nuestro equipo. Estamos disponibles para atenderte y responder a tus consultas."
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_bg"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        android:hint="     Nombre"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:paddingLeft="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <EditText
+        android:id="@+id/editTextcorreo"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_bg"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        android:hint="     Correo Electrónico"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:paddingLeft="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_bg"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        android:hint="     Teléfono"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:paddingLeft="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <EditText
+        android:id="@+id/editTextMensaje"
+        android:layout_width="366dp"
+        android:layout_height="162dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_bg"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        android:hint="     Mensaje"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:paddingLeft="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="137dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#FFC774"
+        android:text="Enviar"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
