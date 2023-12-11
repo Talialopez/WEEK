@@ -57,14 +57,17 @@
         android:id="@+id/botonLogin"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FDB74E"
         android:text="Registrate con correo electrónico"
         android:textColor="#000000"
         android:textSize="16.5sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido"
+        tools:ignore="NotSibling" />
 
     <Button
         android:id="@+id/botonLogin"
