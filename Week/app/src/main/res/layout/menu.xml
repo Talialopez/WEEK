@@ -98,12 +98,13 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline"
                 app:layout_constraintStart_toStartOf="parent" />
 
+
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.32696897" />
+                app:layout_constraintGuide_end="282dp" />
 
             <ImageButton
                 android:id="@+id/botonAbajo2"
@@ -121,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.6682578" />
+                app:layout_constraintGuide_begin="280dp" />
 
             <ImageButton
                 android:id="@+id/botonAbajo3"
@@ -163,6 +164,29 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="321dp" />
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="743dp"
+            android:background="#182642"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#FFC774"
+                android:text="Política de privacidad"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+
+        </FrameLayout>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
