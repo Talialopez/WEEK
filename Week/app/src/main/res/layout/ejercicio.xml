@@ -108,7 +108,7 @@
         android:layout_marginTop="64dp"
         android:text="LUNES"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
