@@ -1,4 +1,3 @@
-<!-- res/drawable/edittext_rounded_bg.xml -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="#FFC774" />
     <corners android:radius="48dp" />
