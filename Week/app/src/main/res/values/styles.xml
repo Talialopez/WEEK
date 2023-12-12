@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle">
+        <item name="android:background">@color/botones</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:color">@color/botones</item>
+    </style>
+</resources>

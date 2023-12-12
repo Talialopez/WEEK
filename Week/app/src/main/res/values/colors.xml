@@ -2,4 +2,5 @@
 <resources>
     <color name="background_color">#080C20</color>
     <color name="titulo_ejercicio">#FFFFFF</color>
+    <color name="botones">#FDB74E</color>
 </resources>
