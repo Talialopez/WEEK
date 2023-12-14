@@ -20,6 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Registro"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ConfirmarRegistro"
+            android:exported="true">
+        </activity>
+        <activity android:name=".IniciarSesion"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SesionIniciada"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

@@ -40,7 +40,7 @@
             app:layout_constraintVertical_bias="0.321" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonretroceder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
@@ -76,7 +76,7 @@
         android:layout_centerHorizontal="true"
         android:text="Fecha de última actualización: 1 de octubre de 2023"
         android:textColor="#FFFFFF"
-        android:textSize="14dp"
+        android:textSize="12dp"
         tools:layout_editor_absoluteX="21dp"
         tools:layout_editor_absoluteY="148dp"
         tools:ignore="MissingConstraints" />

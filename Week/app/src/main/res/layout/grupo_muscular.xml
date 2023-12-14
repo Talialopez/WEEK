@@ -38,7 +38,7 @@
             app:layout_constraintVertical_bias="0.321" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonretroceder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
@@ -89,7 +89,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button1" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/continuar"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="33dp"
@@ -109,8 +109,8 @@
             android:text="Espalda"
             android:textColor="#000000"
             android:textSize="18dp"
-            app:layout_constraintStart_toStartOf="@+id/button3"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintStart_toStartOf="@+id/continuar"
+            app:layout_constraintTop_toBottomOf="@+id/continuar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
