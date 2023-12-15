@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/buttonayuda"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:backgroundTint="#FFC774"
@@ -38,7 +38,7 @@
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario"
             app:layout_constraintVertical_bias="0.173" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_begin="280dp" />
+                app:layout_constraintGuide_end="139dp" />
 
             <ImageButton
                 android:id="@+id/botonAbajo3"
@@ -146,14 +146,13 @@
             android:headerBackground="@android:color/white"
             android:minDate="01/04/2024"
             android:unfocusedMonthDateColor="@android:color/darker_gray"
-            android:weekDayTextColor="@android:color/black"
             android:weekNumberColor="@android:color/black"
             android:weekSeparatorLineColor="@android:color/black"
             tools:layout_editor_absoluteX="48dp"
             tools:layout_editor_absoluteY="127dp" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttoncalendario"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:backgroundTint="#FFC774"
@@ -164,30 +163,6 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="321dp" />
-
-        <FrameLayout
-            android:layout_width="280dp"
-            android:layout_height="743dp"
-            android:background="#182642"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="200dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="100dp"
-                android:backgroundTint="#FFC774"
-                android:text="Política de privacidad"
-                android:textColor="#000000"
-                android:textSize="18dp" />
-
-
-
-        </FrameLayout>
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

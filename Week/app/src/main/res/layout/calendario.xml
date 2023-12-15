@@ -39,7 +39,7 @@
             app:layout_constraintVertical_bias="0.321" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonretroceder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
@@ -63,7 +63,7 @@
 
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttoncalendario"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
@@ -79,16 +79,16 @@
             android:id="@+id/imageView3"
             android:layout_width="70dp"
             android:layout_height="40dp"
-            app:layout_constraintBottom_toBottomOf="@+id/button1"
+            app:layout_constraintBottom_toBottomOf="@+id/buttoncalendario"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.81"
-            app:layout_constraintStart_toStartOf="@+id/button1"
+            app:layout_constraintStart_toStartOf="@+id/buttoncalendario"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.75"
             app:srcCompat="@drawable/anadir" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonmes"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
@@ -96,8 +96,8 @@
             android:text="Agosto"
             android:textSize="18dp"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/button1"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+            app:layout_constraintStart_toStartOf="@+id/buttoncalendario"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

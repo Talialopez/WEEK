@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#080C20"
-    tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttoniniciarsesion"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginTop="416dp"
@@ -53,18 +52,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -89,9 +76,9 @@
         android:inputType="textPassword"
         android:textColorHint="#9F9F9F"
         android:textSize="18dp"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewContraseña"
@@ -114,21 +101,26 @@
         android:inputType="textPassword"
         android:textColorHint="#9F9F9F"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContraseña"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/botonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
         android:text="¿Olvidaste tu Contraseña?"
         android:textColor="#9F9F9F"
         android:textSize="22dp"
-        tools:ignore="DuplicateIds,MissingConstraints,UnknownIdInLayout"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttoniniciarsesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña"
+        app:layout_constraintVertical_bias="0.585"
+        tools:ignore="DuplicateIds,MissingConstraints,UnknownIdInLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

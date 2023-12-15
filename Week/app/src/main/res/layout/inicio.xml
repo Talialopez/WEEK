@@ -2,17 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="731dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:contentDescription="fondo de la aplicación"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fondo" />
 
     <ImageView
@@ -27,7 +28,7 @@
         app:srcCompat="@drawable/logo" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/tickconfirmacion"
         android:layout_width="176dp"
         android:layout_height="124dp"
         android:layout_marginEnd="116dp"
@@ -70,7 +71,7 @@
         tools:ignore="NotSibling" />
 
     <Button
-        android:id="@+id/botonLogin"
+        android:id="@+id/botonLogin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
@@ -81,11 +82,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido"
-        tools:ignore="DuplicateIds" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

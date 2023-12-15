@@ -5,77 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#080C20"
-    tools:context=".MainActivity">
+    tools:context="SesionIniciada">
+
+    <ImageButton
+        android:id="@+id/buttonretroceder5"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="Retroceder"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/logo_barra" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#080C20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         tools:context=".MainActivity"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteY="58dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="424dp"
+            android:layout_height="70dp"
+            android:background="#FDB74E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ExtraText">
+
+            <ImageButton
+                android:id="@+id/buttonmenu"
+                android:layout_width="127dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu"
+                tools:ignore="ExtraText,MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/buttonayuda"
             android:layout_width="304dp"
             android:layout_height="60dp"
+            android:layout_marginTop="420dp"
             android:backgroundTint="#FFC774"
             android:text="¿Necesitas ayuda?"
             android:textColor="#000000"
             android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.56"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="503dp" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.0" />
 
         <View
             android:id="@+id/divider12"
             android:layout_width="409dp"
-            android:layout_height="1dp"
+            android:layout_height="5dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="#FFE0B2"
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario"
             app:layout_constraintVertical_bias="0.173" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="450dp"
-            android:layout_height="88dp"
-            android:layout_marginBottom="724dp"
-            android:background="#FDB74E"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.512"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.37"
-            tools:ignore="ExtraText">
-
-            <ImageButton
-                android:id="@+id/botonMenu"
-                android:layout_width="127dp"
-                android:layout_height="90dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="menu"
-                app:srcCompat="@drawable/menu"
-                tools:ignore="ExtraText,MissingConstraints"
-                tools:layout_editor_absoluteX="316dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="160dp"
-                android:layout_height="151dp"
-                app:srcCompat="@drawable/logofondo"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="-13dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,6 +91,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                app:menu="@menu/val_menu" />
 
             <ImageButton
                 android:id="@+id/botonAbajo1"
@@ -145,24 +157,41 @@
             android:headerBackground="@android:color/white"
             android:minDate="01/04/2024"
             android:unfocusedMonthDateColor="@android:color/darker_gray"
-            android:weekDayTextColor="@android:color/black"
             android:weekNumberColor="@android:color/black"
             android:weekSeparatorLineColor="@android:color/black"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="127dp" />
+            app:layout_constraintBottom_toTopOf="@+id/buttoncalendario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.631"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.603" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttoncalendario"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:backgroundTint="#FFC774"
             android:text="CALENDARIO"
             android:textColor="#000000"
             android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonayuda"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.56"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="321dp" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.711" />
+
+        <ImageButton
+            android:id="@+id/buttonretroceder"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="Retroceder"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39"
+            app:srcCompat="@drawable/logo_barra" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

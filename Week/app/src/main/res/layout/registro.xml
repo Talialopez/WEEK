@@ -39,18 +39,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -74,9 +62,9 @@
         android:inputType="textPassword"
         android:textColorHint="#9F9F9F"
         android:textSize="18dp"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewContraseña"
@@ -99,9 +87,9 @@
         android:inputType="textPassword"
         android:textColorHint="#9F9F9F"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContraseña"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewUsuario"
@@ -124,24 +112,9 @@
         android:inputType="textPassword"
         android:textColorHint="#9F9F9F"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="326dp" />
-
-    <!-- CheckBox -->
-
-
-    <!-- condicion, si no marcas la casilla no se crea la cuenta  -->
-    checkBoxOpcion.setOnCheckedChangeListener { buttonView, isChecked ->
-    // Realizar acciones basadas en el estado actual del CheckBox (isChecked)
-    if (isChecked) {
-    // CheckBox seleccionado
-    // Realizar acciones cuando se selecciona la opción
-    } else {
-    // CheckBox deseleccionado
-    // Realizar acciones cuando se deselecciona la opción
-    }
-    }
+        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBoxOpcion"
@@ -152,12 +125,13 @@
         android:text="Yo acepto los términos y la política de privacidad."
         android:textColor="#FFFFFF"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints,UnknownId"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintBottom_toTopOf="@+id/continuar"
+        app:layout_constraintStart_toStartOf="@+id/editTextUser"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser"
+        tools:ignore="MissingConstraints,UnknownId" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/continuar"
         android:layout_width="137dp"
         android:layout_height="55dp"
         android:layout_marginBottom="180dp"

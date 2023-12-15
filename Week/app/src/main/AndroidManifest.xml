@@ -20,6 +20,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Registro"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ConfirmarRegistro"
+            android:exported="true">
+        </activity>
+        <activity android:name=".IniciarSesion"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SesionIniciada"
+            android:exported="true">
+        </activity>
+        <activity android:name=".PoliticaPrivacidad"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Contacto"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ConfirmarContacto"
+            android:exported="true">
+        </activity>
+        <activity android:name=".AyudaActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ObjetivoFuerza"
+            android:exported="true">
+        </activity>
+        <activity android:name=".CalendarioActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".CrearCalendario"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Lunes"
+            android:exported="true">
+        </activity>
+        <activity android:name=".GrupoMuscular"
+            android:exported="true">
+        </activity>
+        <activity android:name=".EnfoqueMuscular"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
