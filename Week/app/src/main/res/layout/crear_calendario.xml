@@ -38,18 +38,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/buttonretroceder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -108,7 +96,7 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/buttoncalendario"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="4dp"
@@ -119,7 +107,7 @@
                     android:textSize="18dp" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonmes"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="4dp"

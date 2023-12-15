@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/buttonayuda"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:backgroundTint="#FFC774"
@@ -38,7 +38,7 @@
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario"
             app:layout_constraintVertical_bias="0.173" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -152,7 +152,7 @@
             tools:layout_editor_absoluteY="127dp" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttoncalendario"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:backgroundTint="#FFC774"

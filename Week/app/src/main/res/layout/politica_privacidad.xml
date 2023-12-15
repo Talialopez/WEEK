@@ -39,105 +39,105 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/buttonretroceder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/politicaPrivacidadTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Política de privacidad de Week"
-        android:textColor="#FFFFFF"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="89dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/fechaActualizacionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/politicaPrivacidadTextView"
-        android:layout_centerHorizontal="true"
-        android:text="Fecha de última actualización: 1 de octubre de 2023"
-        android:textColor="#FFFFFF"
-        android:textSize="12dp"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="148dp"
-        tools:ignore="MissingConstraints" />
-
-
-    <TextView
-        android:id="@+id/bienvenidaTextViewTextView"
-        android:layout_width="365dp"
-        android:layout_height="129dp"
-        android:layout_below="@id/politicaPrivacidadTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="24dp"
-        android:justificationMode="inter_word"
-        android:text="Bienvenido a Week (nosotros, nuestro o la Compañía).En Week, estamos comprometidos  con la protección de tu privacidad y tus datos personales. Esta política de privacidad describe cómo recopilamos, utilizamos y compartimos información personal cuando utilizas nuestros servicios, incluyendo nuestro sitio web y nuestra aplicación móvil."
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="391dp"
+        android:layout_height="648dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-    <TextView
-        android:id="@+id/informacionTextView"
-        android:layout_width="216dp"
-        android:layout_height="21dp"
-        android:layout_below="@id/politicaPrivacidadTextView"
-        android:layout_centerHorizontal="true"
-        android:text="Información que Recopilamos"
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="310dp" />
+        <TextView
+            android:id="@+id/politicaPrivacidadTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Política de privacidad de Week"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/recopilamosTextViewTextView"
-        android:layout_width="367dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/politicaPrivacidadTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="24dp"
-        android:justificationMode="inter_word"
-        android:text="Recopilamos varios tipos de información cuando utilizas nuestros servicios, incluyendo:"
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="335dp" />
+        <TextView
+            android:id="@+id/fechaActualizacionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/politicaPrivacidadTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Fecha de última actualización: 1 de octubre de 2023"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/politicaPrivacidadTextView"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/registroTextView"
-        android:layout_width="367dp"
-        android:layout_height="325dp"
-        android:lineSpacingExtra="8dp"
-        android:text="•  Información de Registro: Recopilamos información cuando te registras en Week, como tu nombre, dirección de correo electrónico y datos de contacto.\n \n •  Información de Uso: Recopilamos información sobre cómo utilizas nuestros servicios, como las páginas que visitas, las funciones que utilizas y la forma en que interactúas con nuestro contenido. \n \n •  Información de Dispositivo: Recopilamos información sobre tu dispositivo, como la dirección IP, el tipo de navegador, la versión del sistema operativo y la identificación del dispositivo."
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        android:justificationMode="inter_word"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="385dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/bienvenidaTextViewTextView"
+            android:layout_width="365dp"
+            android:layout_height="129dp"
+            android:layout_below="@id/politicaPrivacidadTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:justificationMode="inter_word"
+            android:text="Bienvenido a Week (nosotros, nuestro o la Compañía).En Week, estamos comprometidos  con la protección de tu privacidad y tus datos personales. Esta política de privacidad describe cómo recopilamos, utilizamos y compartimos información personal cuando utilizas nuestros servicios, incluyendo nuestro sitio web y nuestra aplicación móvil."
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/fechaActualizacionTextView"
+            app:layout_constraintTop_toBottomOf="@+id/fechaActualizacionTextView"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/informacionTextView"
+            android:layout_width="216dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/politicaPrivacidadTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Información que Recopilamos"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bienvenidaTextViewTextView"
+            app:layout_constraintTop_toBottomOf="@+id/bienvenidaTextViewTextView"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/recopilamosTextViewTextView"
+            android:layout_width="367dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/politicaPrivacidadTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:justificationMode="inter_word"
+            android:text="Recopilamos varios tipos de información cuando utilizas nuestros servicios, incluyendo:"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/informacionTextView"
+            app:layout_constraintTop_toBottomOf="@+id/informacionTextView"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/registroTextView"
+            android:layout_width="367dp"
+            android:layout_height="325dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="8dp"
+            android:text="•  Información de Registro: Recopilamos información cuando te registras en Week, como tu nombre, dirección de correo electrónico y datos de contacto.\n \n •  Información de Uso: Recopilamos información sobre cómo utilizas nuestros servicios, como las páginas que visitas, las funciones que utilizas y la forma en que interactúas con nuestro contenido. \n \n "
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/recopilamosTextViewTextView"
+            app:layout_constraintTop_toBottomOf="@+id/recopilamosTextViewTextView"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

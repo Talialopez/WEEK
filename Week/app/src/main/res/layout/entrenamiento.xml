@@ -126,7 +126,7 @@
         tools:ignore="ExtraText">
 
         <ImageButton
-            android:id="@+id/botonMenu2"
+            android:id="@+id/buttonmenu"
             android:layout_width="127dp"
             android:layout_height="90dp"
             android:background="#00FFFFFF"
