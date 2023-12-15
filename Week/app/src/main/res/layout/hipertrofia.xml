@@ -38,6 +38,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:contentDescription="Retroceder"
+            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
+            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
+            app:srcCompat="@drawable/fle" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -56,12 +68,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HIPERTROFIA"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.244" />
 
     <LinearLayout
         android:id="@+id/myLinearLayout"
@@ -74,85 +87,20 @@
 
     </LinearLayout>
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="332dp"
-        android:layout_marginEnd="16dp"
-        android:background="#FFE0B2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttoncalendario"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Entrenamiento con pesas"
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="413dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:padding="50dp"
         android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="La base para la hipertrofia es el levantamiento de pesas. Incorpora ejercicios compuestos como sentadillas, peso muerto y press de banca para reclutar múltiples grupos musculares."
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="60sp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="@+id/button1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945"
-        app:srcCompat="@drawable/interrogante" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="432dp"
-        android:layout_marginEnd="16dp"
-        android:background="#FFE0B2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonmes"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Volumen Adecuado"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/buttoncalendario"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="60sp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
-        app:srcCompat="@drawable/interrogante" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <View
         android:id="@+id/divider3"
@@ -168,14 +116,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/continuar"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:backgroundTint="#00FFFFFF"
         android:text="Progresión Gradual"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/buttoncalendario"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -215,9 +162,6 @@
         android:text="Descanso y Recuperación"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/buttoncalendario"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintEnd_toEndOf="@id/button1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
