@@ -37,18 +37,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,7 +50,7 @@
 
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttoncalendario"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="0dp"
@@ -75,7 +63,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonmes"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="33dp"
@@ -83,11 +71,11 @@
             android:text="Fuerza"
             android:textSize="18dp"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/button1"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+            app:layout_constraintStart_toStartOf="@+id/buttoncalendario"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/continuar"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="33dp"
@@ -95,8 +83,8 @@
             android:text="Perdida de peso"
             android:textSize="18dp"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintStart_toStartOf="@+id/buttonmes"
+            app:layout_constraintTop_toBottomOf="@+id/buttonmes" />
 
         <Button
             android:id="@+id/button4"
@@ -107,8 +95,8 @@
             android:text="Resistencia"
             android:textSize="18dp"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/button3"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintStart_toStartOf="@+id/continuar"
+            app:layout_constraintTop_toBottomOf="@+id/continuar" />
         <Button
             android:id="@+id/button5"
             android:layout_width="304dp"
@@ -130,7 +118,7 @@
         android:layout_marginTop="64dp"
         android:text="¿Cuál es tu objetivo de entrenamiento?"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#080C20"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,7 +39,7 @@
             app:layout_constraintVertical_bias="0.321" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonretroceder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
@@ -154,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Añadir imágen"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -163,12 +163,12 @@
         app:layout_constraintVertical_bias="0.244" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/continuar"
         android:layout_width="137dp"
         android:layout_height="55dp"
         android:backgroundTint="#FFC774"
         android:text="Guardar"
-        android:textColor="@color/black"
+        android:textColor="@android:color/black"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,4 +176,3 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

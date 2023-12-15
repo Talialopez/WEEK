@@ -26,7 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="¡Ejercicio guardado con éxito!"
+        android:text="¡Mensaje Enviado
+                        con éxito!"
         android:textColor="@android:color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"

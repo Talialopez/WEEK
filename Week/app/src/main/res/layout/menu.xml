@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080C20"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#080C20"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/buttonayuda"
+            android:layout_width="304dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FFC774"
+            android:text="¿Necesitas ayuda?"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="503dp" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFE0B2"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario"
+            app:layout_constraintVertical_bias="0.173" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="450dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="724dp"
+            android:background="#FDB74E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37"
+            tools:ignore="ExtraText">
+
+            <ImageButton
+                android:id="@+id/botonMenu"
+                android:layout_width="127dp"
+                android:layout_height="90dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="menu"
+                app:srcCompat="@drawable/menu"
+                tools:ignore="ExtraText,MissingConstraints"
+                tools:layout_editor_absoluteX="316dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="160dp"
+                android:layout_height="151dp"
+                app:srcCompat="@drawable/logofondo"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="-13dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="419dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/botonAbajo1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFC774"
+                android:contentDescription="Menu"
+                android:src="@drawable/casita"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="282dp" />
+
+            <ImageButton
+                android:id="@+id/botonAbajo2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFC774"
+                android:contentDescription="Menu"
+                android:src="@drawable/pesas"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="139dp" />
+
+            <ImageButton
+                android:id="@+id/botonAbajo3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFC774"
+                android:contentDescription="Perfil"
+                android:src="@drawable/perfil"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="316dp"
+            android:layout_height="140dp"
+            android:background="@android:color/white"
+            android:focusedMonthDateColor="@android:color/black"
+            android:headerBackground="@android:color/white"
+            android:minDate="01/04/2024"
+            android:unfocusedMonthDateColor="@android:color/darker_gray"
+            android:weekNumberColor="@android:color/black"
+            android:weekSeparatorLineColor="@android:color/black"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+        <Button
+            android:id="@+id/buttoncalendario"
+            android:layout_width="304dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FFC774"
+            android:text="CALENDARIO"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="321dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

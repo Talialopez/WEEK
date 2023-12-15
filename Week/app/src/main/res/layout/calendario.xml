@@ -39,7 +39,7 @@
             app:layout_constraintVertical_bias="0.321" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonretroceder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
@@ -63,7 +63,7 @@
 
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttoncalendario"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
@@ -79,16 +79,16 @@
             android:id="@+id/imageView3"
             android:layout_width="70dp"
             android:layout_height="40dp"
-            app:layout_constraintBottom_toBottomOf="@+id/button1"
+            app:layout_constraintBottom_toBottomOf="@+id/buttoncalendario"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.81"
-            app:layout_constraintStart_toStartOf="@+id/button1"
+            app:layout_constraintStart_toStartOf="@+id/buttoncalendario"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.75"
             app:srcCompat="@drawable/anadir" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonmes"
             android:layout_width="304dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
@@ -96,8 +96,8 @@
             android:text="Agosto"
             android:textSize="18dp"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="@+id/button1"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+            app:layout_constraintStart_toStartOf="@+id/buttoncalendario"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncalendario" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -120,13 +120,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:src="@drawable/casita"
                 />
+
         <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.33"
-            />
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="137dp" />
 
             <ImageButton
                 android:id="@+id/botonAbajo2"
@@ -140,12 +140,12 @@
                 android:src="@drawable/pesas"
                 />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.67" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="139dp" />
 
             <ImageButton
                 android:id="@+id/botonAbajo3"
@@ -160,21 +160,22 @@
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:text="¿Qué deseas hacer?"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-            app:layout_constraintVertical_bias="2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="¿Qué deseas hacer?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

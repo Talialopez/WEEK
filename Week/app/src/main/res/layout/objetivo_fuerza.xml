@@ -38,18 +38,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -68,13 +56,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HIPERTROFIA"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <LinearLayout
         android:id="@+id/myLinearLayout"
@@ -101,7 +88,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttoncalendario"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:backgroundTint="#00FFFFFF"
@@ -141,14 +128,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonmes"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:backgroundTint="#00FFFFFF"
         android:text="Volumen Adecuado"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="@id/buttoncalendario"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -181,14 +168,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/continuar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:backgroundTint="#00FFFFFF"
         android:text="Progresión Gradual"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="@id/buttoncalendario"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -228,6 +215,8 @@
         android:text="Descanso y Recuperación"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buttoncalendario"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintEnd_toEndOf="@id/button1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
