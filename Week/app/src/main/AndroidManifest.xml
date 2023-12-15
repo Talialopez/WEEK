@@ -62,6 +62,15 @@
         <activity android:name=".EnfoqueMuscular"
             android:exported="true">
         </activity>
+        <activity android:name=".Ejercicio"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ConfirmarEjercicio"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SeleccionarEjercicio"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
