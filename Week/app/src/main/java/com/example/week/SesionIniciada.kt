@@ -34,5 +34,23 @@ class SesionIniciada : AppCompatActivity() {
             val intent = Intent(this, CalendarioActivity::class.java)
             startActivity(intent)
         }
+
+        val btInicio: ImageButton = findViewById(R.id.botonAbajo1)
+        btInicio.setOnClickListener {
+            val intent = Intent(this, SesionIniciada::class.java)
+            startActivity(intent)
+        }
+
+        val btEntrenamiento: ImageButton = findViewById(R.id.botonAbajo2)
+        btEntrenamiento.setOnClickListener {
+            val intent = Intent(this, Entrenamiento::class.java)
+            startActivity(intent)
+        }
+
+        val btPerfil: ImageButton = findViewById(R.id.botonAbajo3)
+        btPerfil.setOnClickListener {
+            val intent = Intent(this, Perfil::class.java)
+            startActivity(intent)
+        }
     }
 }

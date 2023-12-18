@@ -1,4 +1,11 @@
 package com.example.week
 
-class Estadistica {
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class Estadistica : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.estadisticas)
+    }
 }

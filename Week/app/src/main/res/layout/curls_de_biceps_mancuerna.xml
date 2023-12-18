@@ -59,7 +59,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginBottom="48dp"
         android:backgroundTint="#FFC774"
-        android:text="Guardar"
+        android:text="Agregar"
         android:textColor="@android:color/black"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -217,7 +217,7 @@
                 tools:ignore="RtlCompat" />
 
             <ImageView
-                android:id="@+id/imageView12"
+                android:id="@+id/botonconsejos"
                 android:layout_width="72dp"
                 android:layout_marginRight="25dp"
                 android:layout_height="wrap_content"
@@ -252,7 +252,7 @@
                 android:text="Estadísticas" />
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/botonestadisticas"
                 android:layout_width="72dp"
                 android:layout_marginRight="25dp"
                 android:layout_height="wrap_content"
