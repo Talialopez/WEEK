@@ -9,26 +9,23 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
+        android:layout_width="460dp"
+        android:layout_height="62dp"
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:layout_marginBottom="724dp"
         android:background="#FDB74E"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
         tools:ignore="ExtraText">
 
         <TextView
             android:id="@+id/TextoMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="4dp"
             android:background="#00000000"
-            android:text="Calendario"
+            android:text=" Configuración "
             android:textColor="#000000"
             android:textSize="24dp"
             android:textStyle="bold"
@@ -36,59 +33,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.321" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
+            app:layout_constraintVertical_bias="0.466" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="419dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="304dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bordeado"
+        android:ems="10"
+        android:hint="   Buscar"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-
-        <EditText
-            android:id="@+id/editTextText4"
-            android:layout_width="304dp"
-            android:layout_height="48dp"
-            android:background="@drawable/bordeado"
-            android:ems="10"
-            android:hint="   Buscar"
-            android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="105dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextText4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.881"
-            app:layout_constraintStart_toStartOf="@+id/editTextText4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.07"
-            app:srcCompat="@drawable/lapiz" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
@@ -107,7 +67,7 @@
             android:id="@+id/Menu1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="background: #FFE0B2;"
+            android:background=" #FFE0B2"
             android:text="Cuenta"
             android:textColor="#000000"
             android:textSize="20dp"
@@ -321,7 +281,7 @@
             android:id="@+id/Menu2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="background: #FFE0B2;"
+            android:background="#FFE0B2"
             android:text="Preferencias"
             android:textColor="#000000"
             android:textSize="20dp"
@@ -398,7 +358,7 @@
             android:id="@+id/Menu3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="background: #FFE0B2;"
+            android:background="#FFE0B2"
             android:text="Guias"
             android:textColor="#000000"
             android:textSize="20dp"

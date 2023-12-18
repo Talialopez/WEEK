@@ -63,15 +63,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="398dp"
-        android:layout_height="516dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="12dp"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="418dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <TextView
+            android:id="@+id/curlbiceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="   Curl de Biceps (Mancuerna) "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/botonflecha"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/flechaejercicio" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

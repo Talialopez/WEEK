@@ -38,34 +38,26 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.321" />
 
-        <ImageButton
-            android:id="@+id/buttonretroceder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:contentDescription="Retroceder"
-            app:layout_constraintBottom_toBottomOf="@+id/TextoMenu"
-            app:layout_constraintEnd_toStartOf="@+id/TextoMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextoMenu"
-            app:srcCompat="@drawable/fle" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="114dp"
         android:layout_height="122dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:srcCompat="@drawable/chica"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="70dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/botonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="156dp"
         android:background="@android:color/transparent"
         android:text="Cambiar foto de perfil"
         android:textColor="#FFE0B2"
@@ -73,29 +65,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         tools:ignore="DuplicateIds" />
 
     <TextView
         android:id="@+id/textViewCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="16dp"
         android:text="Nombre de usuario"
         android:textColor="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextUser"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/editTextUser"
         android:layout_width="350dp"
         android:layout_height="41dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FFE0B2"
         android:gravity="top|start"
@@ -103,38 +92,36 @@
         android:inputType="textMultiLine"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.616"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextEnlace"
         app:layout_constraintTop_toBottomOf="@+id/textViewCorreo" />
 
     <TextView
         android:id="@+id/textViewGénero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="16dp"
         android:text="Género"
         android:textColor="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnlace" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="350dp"
         android:layout_height="41dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#FFE0B2"
         android:gravity="top|start"
         android:hint="Marin Garcia"
         android:inputType="textMultiLine"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
         app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
 
     <EditText
@@ -142,7 +129,6 @@
         android:layout_width="350dp"
         android:layout_height="41dp"
         android:layout_margin="16dp"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FFE0B2"
         android:gravity="top|start"
@@ -150,7 +136,7 @@
         android:inputType="textMultiLine"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewGénero" />
 
@@ -158,45 +144,42 @@
         android:id="@+id/textViewNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="24dp"
         android:text="Nombre"
         android:textColor="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/botonLogin" />
 
     <EditText
         android:id="@+id/editTextEnlace"
         android:layout_width="350dp"
         android:layout_height="41dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FFE0B2"
         android:gravity="top|start"
         android:hint="Añadir enlace     "
         android:inputType="textMultiLine"
         android:textColorHint="#9F9F9F"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="429dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewGénero"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="137dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="60dp"
         android:backgroundTint="#FFC774"
         android:text="Guardar"
         android:textColor="@android:color/black"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Series"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGeneror"
         tools:ignore="UnknownIdInLayout" />
 
 

@@ -17,7 +17,7 @@ class Ejercicio : AppCompatActivity() {
         }
 
         val btSeleccionar: Button = findViewById(R.id.buttonmes)
-        btCalendario.setOnClickListener {
+        btSeleccionar.setOnClickListener {
             val intent = Intent(this, SeleccionarEjercicio::class.java)
             startActivity(intent)
         }
