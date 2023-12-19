@@ -12,7 +12,7 @@ class Ejercicio : AppCompatActivity() {
 
         val btCalendario: Button = findViewById(R.id.buttoncalendario)
         btCalendario.setOnClickListener {
-            val intent = Intent(this, ConfirmarEjercicio::class.java)
+            val intent = Intent(this, CrearEjercicio::class.java)
             startActivity(intent)
         }
 

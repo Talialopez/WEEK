@@ -116,8 +116,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="424dp"
-        android:layout_height="70dp"
+        android:layout_width="423dp"
+        android:layout_height="63dp"
         android:background="#FDB74E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -131,8 +131,10 @@
             android:layout_height="90dp"
             android:background="#00FFFFFF"
             android:contentDescription="menu"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.518"
             app:srcCompat="@drawable/menu"
             tools:ignore="ExtraText,MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
