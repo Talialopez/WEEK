@@ -25,7 +25,7 @@ class Entrenamiento : AppCompatActivity(){
 
         val btPerfil: ImageButton = findViewById(R.id.botonAbajo3)
         btPerfil.setOnClickListener {
-            val intent = Intent(this, EditarPerfil::class.java)
+            val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
 
