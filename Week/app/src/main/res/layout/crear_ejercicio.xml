@@ -89,7 +89,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/entrenamientoPesas"
             android:layout_width="105dp"
             android:layout_height="26dp"
             android:layout_marginTop="8dp"

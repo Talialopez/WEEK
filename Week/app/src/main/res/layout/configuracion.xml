@@ -10,8 +10,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="460dp"
-        android:layout_height="62dp"
-        android:layout_width="match_parent"
         android:layout_height="88dp"
         android:layout_marginBottom="724dp"
         android:background="#FDB74E"
@@ -108,7 +106,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/entrenamientoPesas"
             android:layout_width="105dp"
             android:layout_height="26dp"
             android:layout_marginTop="8dp"

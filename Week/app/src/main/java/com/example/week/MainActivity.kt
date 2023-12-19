@@ -20,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Registro::class.java)
             startActivity(intent)
         }
+
+        val btIniciarSesion : Button = findViewById(R.id.botonLogin2)
+        btIniciarSesion.setOnClickListener{
+            val intent = Intent(this, IniciarSesion::class.java)
+            startActivity(intent)
+        }
     }
 }
