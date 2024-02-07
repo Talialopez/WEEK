@@ -59,7 +59,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="ejemplo@gmail.com"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         android:textColorHint="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
