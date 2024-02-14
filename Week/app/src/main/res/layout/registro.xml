@@ -61,6 +61,7 @@
         android:hint="ejemplo@gmail.com"
         android:inputType="textEmailAddress"
         android:textColorHint="#9F9F9F"
+        android:textColor="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
         app:layout_constraintTop_toBottomOf="@+id/textViewCorreo"
@@ -83,13 +84,15 @@
         android:id="@+id/editTextContraseña"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="mínimo 8 caracteres"
+        android:hint="ejemploContraseña"
         android:inputType="textPassword"
         android:textColorHint="#9F9F9F"
+        android:textColor="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@+id/textViewContraseña"
         app:layout_constraintTop_toBottomOf="@+id/textViewContraseña"
         tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/textViewUsuario"
@@ -108,9 +111,10 @@
         android:id="@+id/editTextUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="usuario1"
-        android:inputType="textPassword"
+        android:hint="ejemploUsuario"
+        android:inputType="textPersonName"
         android:textColorHint="#9F9F9F"
+        android:textColor="#9F9F9F"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
         app:layout_constraintTop_toBottomOf="@+id/textViewUsuario"

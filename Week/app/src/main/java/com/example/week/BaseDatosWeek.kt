@@ -13,7 +13,7 @@ class BaseDatosWeek(context: Context) :
 
         private const val create_users_table =
             "CREATE TABLE usuarios (" +
-                    "ID INTEGER PRIMARY KEY AUTOINCREMENT," +  // Use INTEGER instead of INT
+                    "ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "CORREO TEXT," +
                     "NOMBRE TEXT," +
                     "PASSWORD TEXT);"
