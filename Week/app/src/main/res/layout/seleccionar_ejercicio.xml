@@ -64,35 +64,20 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="418dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="409dp"
+        android:layout_height="534dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider">
 
-        <TextView
-            android:id="@+id/curlbiceps"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="   Curl de Biceps (Mancuerna) "
-            android:textColor="#FFFFFF"
-            android:textSize="20dp" />
-
-        <ImageView
-            android:id="@+id/botonflecha"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginRight="25dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/flechaejercicio" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

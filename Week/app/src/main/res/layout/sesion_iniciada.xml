@@ -13,7 +13,6 @@
         android:layout_height="100dp"
         android:background="#00FFFFFF"
         android:contentDescription="Retroceder"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.39"
@@ -99,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="start"
-                app:menu="@menu/val_menu" />
+                app:menu="@menu/nav_menu" />
 
             <ImageButton
                 android:id="@+id/botonAbajo1"
@@ -195,6 +194,17 @@
             app:layout_constraintVertical_bias="0.39"
             app:srcCompat="@drawable/logo_barra" />
 
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="165dp"
+            android:layout_height="148dp"
+            android:layout_gravity="start"
+            android:background="#080C20"
+            app:headerLayout="@layout/nav_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            app:menu="@menu/nav_menu"
+            tools:ignore="DuplicateIds,MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
