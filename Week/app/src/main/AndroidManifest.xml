@@ -95,6 +95,10 @@
         <activity android:name=".CrearEjercicio"
             android:exported="true">
         </activity>
+        <activity android:name=".Adaptador"
+        android:exported="true">
+        </activity>
+
 
     </application>
 

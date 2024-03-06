@@ -55,17 +55,6 @@
             app:layout_constraintVertical_bias="0.37"
             tools:ignore="ExtraText">
 
-            <ImageButton
-                android:id="@+id/botonMenu"
-                android:layout_width="127dp"
-                android:layout_height="90dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="menu"
-                app:srcCompat="@drawable/menu"
-                tools:ignore="ExtraText,MissingConstraints"
-                tools:layout_editor_absoluteX="316dp"
-                tools:layout_editor_absoluteY="16dp" />
-
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="160dp"
@@ -163,6 +152,18 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="321dp" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:menu="@menu/nav_menu"
+            tools:layout_editor_absoluteX="53dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
