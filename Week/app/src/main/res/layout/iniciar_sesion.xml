@@ -72,7 +72,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="ejemplo@gmail.com / usuario"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         android:textColorHint="#9F9F9F"
         android:textColor="#9F9F9F"
         android:textSize="18dp"
