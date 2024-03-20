@@ -12,7 +12,7 @@ class Registro : AppCompatActivity() {
 
     private lateinit var dbHelper: BaseDatosWeek
 
-    private fun registrarUsuario() {
+    fun registrarUsuario() {
         val correo = findViewById<EditText>(R.id.editTextCorreo).text.toString()
         val contraseña = findViewById<EditText>(R.id.editTextContraseña).text.toString()
         val nombreUsuario = findViewById<EditText>(R.id.editTextUser).text.toString()
