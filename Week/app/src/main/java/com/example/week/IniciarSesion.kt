@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 class IniciarSesion : AppCompatActivity() {
 
-    private lateinit var dbHelper: BaseDatosWeek
+    lateinit var dbHelper: BaseDatosWeek
 
-    private fun iniciarSesion() {
+    fun iniciarSesion() {
         val input = findViewById<EditText>(R.id.editTextCorreo).text.toString()
         val contraseña = findViewById<EditText>(R.id.editTextContraseña).text.toString()
 
