@@ -1,5 +1,6 @@
 package com.example.week
 
+import Entrenamiento
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -40,6 +41,12 @@ class Perfil : AppCompatActivity() {
         val btPerfil: ImageButton = findViewById(R.id.botonAbajo3)
         btPerfil.setOnClickListener {
             val intent = Intent(this, Perfil::class.java)
+            startActivity(intent)
+        }
+
+        val btFormulario: Button = findViewById(R.id.formulario)
+        btFormulario.setOnClickListener {
+            val intent = Intent(this, Formulario::class.java)
             startActivity(intent)
         }
     }
