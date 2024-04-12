@@ -43,5 +43,11 @@ class Perfil : AppCompatActivity() {
             val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
+
+        val btFormulario: Button = findViewById(R.id.formulario)
+        btFormulario.setOnClickListener {
+            val intent = Intent(this, Formulario::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -80,9 +80,7 @@
         <activity android:name=".Estadistica"
             android:exported="true">
         </activity>
-        <activity android:name=".Entrenamiento"
-            android:exported="true">
-        </activity>
+
         <activity android:name=".Perfil"
             android:exported="true">
         </activity>
@@ -92,14 +90,12 @@
         <activity android:name=".Configuracion"
             android:exported="true">
         </activity>
-        <activity android:name=".CrearEjercicio"
-            android:exported="true">
-        </activity>
+
         <activity android:name=".Adaptador"
         android:exported="true">
         </activity>
-
-
+        <activity android:name=".Formulario" />
+        
     </application>
 
 </manifest>
