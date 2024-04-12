@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EstiloBoton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/boton_naranja</item> <!-- Define un fondo personalizado si lo deseas -->
+    </style>
+</resources>

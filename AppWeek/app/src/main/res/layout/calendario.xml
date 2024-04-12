@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_general" />
+
+    <TextView
+        android:id="@+id/titulo_calendario2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calendario"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/que_deseas_hacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="¿Que deseas hacer?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_calendario2" />
+
+    <Button
+        android:id="@+id/btn_crear_calendario"
+        android:layout_width="304dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFC774"
+        android:text="Crear nuevo calendario"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/que_deseas_hacer" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_calendario"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_calendario"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_calendario"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_calendario"
+        app:srcCompat="@drawable/anadir" />
+
+    <Button
+        android:id="@+id/btn_mes"
+        android:layout_width="304dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFC774"
+        android:text="Agosto"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_calendario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_calendario" />
+
+    <include
+        layout="@layout/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

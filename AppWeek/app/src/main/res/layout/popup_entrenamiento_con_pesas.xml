@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TextView01"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="\n\nLa base para la hipertrofia es el levantamiento de pesas.\n\nIncorpora ejercicios compuestos como sentadillas, peso muerto y press de banca para reclutar múltiples grupos musculares.\n\n">
+</TextView>

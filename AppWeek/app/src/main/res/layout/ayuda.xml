@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_general" />
+
+    <TextView
+        android:id="@+id/titulo_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ayuda"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/introduccion_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="¿Cual es tu objetivo de entrenamiento?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_ayuda" />
+
+    <Button
+        android:id="@+id/Hipertrofia"
+        style="@style/EstiloBoton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:text="Hipertrofia"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduccion_ayuda" />
+
+    <Button
+        android:id="@+id/perdida_peso"
+        style="@style/EstiloBoton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:text="Perdida de peso"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Hipertrofia"
+        app:layout_constraintStart_toStartOf="@+id/Hipertrofia"
+        app:layout_constraintTop_toBottomOf="@+id/Hipertrofia" />
+
+    <Button
+        android:id="@+id/tonificacion"
+        style="@style/EstiloBoton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:text="Tonificacion"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/perdida_peso"
+        app:layout_constraintStart_toStartOf="@+id/perdida_peso"
+        app:layout_constraintTop_toBottomOf="@+id/perdida_peso" />
+
+    <Button
+        android:id="@+id/Resistencia"
+        style="@style/EstiloBoton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:text="Resistencia"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tonificacion"
+        app:layout_constraintStart_toStartOf="@+id/tonificacion"
+        app:layout_constraintTop_toBottomOf="@+id/tonificacion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

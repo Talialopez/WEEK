@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_general"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/titulo_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Registro"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correo_electronico"
+        android:layout_width="212dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="72dp"
+        android:text="Correo Electrónico"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_registro" />
+
+    <EditText
+        android:id="@+id/editar_correo"
+        android:layout_width="299dp"
+        android:layout_height="43dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/correo_electronico"
+        app:layout_constraintTop_toBottomOf="@+id/correo_electronico" />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editar_correo"
+        app:layout_constraintTop_toBottomOf="@+id/editar_correo" />
+
+    <EditText
+        android:id="@+id/editar_contraseña"
+        android:layout_width="294dp"
+        android:textColor="@color/white"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editar_correo"
+        app:layout_constraintStart_toStartOf="@+id/contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/contraseña" />
+
+    <TextView
+        android:id="@+id/nombre_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Nombre de Usuario"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editar_contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editar_contraseña" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editar_contraseña"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nombre_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_usuario" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerminos"
+        android:layout_width="368dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/texto_terminos"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/nombre_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <Button
+        android:id="@+id/continuar_registro"
+        style="@style/EstiloBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTerminos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Week2"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SesionIniciada"
+            android:exported="true"/>
+        <activity android:name=".Registro"
+            android:exported="true"/>
+        <activity android:name=".ConfirmacionRegistro"
+            android:exported="true"/>
+        <activity android:name=".DatosPersonales"
+            android:exported="true"/>
+        <activity android:name=".IniciarSesion"
+            android:exported="true"/>
+        <activity android:name=".PoliticaPrivacidad"
+            android:exported="true"/>
+        <activity android:name=".Contacto"
+            android:exported="true"/>
+        <activity android:name=".ConfirmacionContacto"
+            android:exported="true"/>
+        <activity android:name=".Ayuda"
+            android:exported="true"/>
+        <activity android:name=".ObjetivoHipertrofia"
+            android:exported="true"/>
+        <activity android:name=".PopUpActivity"
+            android:exported="true"/>
+        <activity android:name=".Calendario"
+            android:exported="true"/>
+        <activity android:name=".CrearCalendario"
+            android:exported="true"/>
+        <activity android:name=".GrupoMuscular"
+            android:exported="true"/>
+        <activity android:name=".EnfoqueMuscular"
+            android:exported="true"/>
+        <activity android:name=".Ejercicio"
+            android:exported="true"/>
+        <activity android:name=".CrearEjercicio"
+            android:exported="true"/>
+        <activity android:name=".ConfirmarEjercicio"
+            android:exported="true"/>
+        <activity android:name=".SeleccionarEjercicio"
+            android:exported="true"/>
+        <activity android:name=".CurlsBiceps"
+            android:exported="true"/>
+        <activity android:name=".Consejos"
+            android:exported="true"/>
+        <activity android:name=".Estadisticas"
+            android:exported="true"/>
+        <activity android:name=".Entrenamiento"
+            android:exported="true"/>
+        <activity android:name=".Reporte"
+            android:exported="true"/>
+        <activity android:name=".Lunes"
+            android:exported="true"/>
+    </application>
+
+</manifest>

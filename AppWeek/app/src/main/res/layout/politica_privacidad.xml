@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_general"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/politica_privacidad_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Politica de Privacidad"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/titulo_politica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Politica de privacidad de Week"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/politica_privacidad_titulo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_politica">
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de última actualización: 1 de octubre de 2023\n\nBienvenido a Week. En Week, estamos comprometidos con la protección de tu privacidad y tus datos personales. Esta política de privacidad describe cómo recopilamos, utilizamos y compartimos
+        información personal cuando utilizas nuestros servicios, incluyendo nuestro sitio web y nuestra aplicación móvil.\n\nInformación que Recopilamos\n\nRecopilamos varios tipos de información cuando utilizas nuestros servicios, incluyendo:
+\n\nInformación de Registro: Recopilamos información cuando te registras en Week, como tu nombre, dirección de correo electrónico y datos de contacto\n\n
+Información de Uso: Recopilamos información sobre cómo utilizas nuestros servicios, como las páginas que visitas, las funciones que utilizas y la forma en que interactúas con nuestro contenido.\n\nInformación de Dispositivo: Recopilamos información sobre tu dispositivo, como la dirección IP, el tipo de navegador, la versión del sistema operativo y la identificación del dispositivo."
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

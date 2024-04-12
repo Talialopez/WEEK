@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_general" />
+
+    <TextView
+        android:id="@+id/titulo_calendario2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calendario"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/titulo_seleccion_dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Selecciona los dias de entrenamiento"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_calendario2" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="304dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton_naranja"
+        android:ems="10"
+        android:hint="   Nombre del calendario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_seleccion_dias" />
+
+    <Button
+        android:id="@+id/btn_lunes"
+        style="@style/EstiloBoton"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="LUNES"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextText4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+    <Button
+        android:id="@+id/btn_martes"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="MARTES"
+        android:textColor="@color/black"
+        style="@style/EstiloBoton"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+    <Button
+        android:id="@+id/btn_miercoles"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="MIERCOLES"
+        android:textColor="@color/black"
+        style="@style/EstiloBoton"
+        app:layout_constraintStart_toStartOf="@+id/btn_lunes"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lunes" />
+
+    <Button
+        android:id="@+id/btn_jueves"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="JUEVES"
+        android:textColor="@color/black"
+        style="@style/EstiloBoton"
+        app:layout_constraintEnd_toEndOf="@+id/btn_martes"
+        app:layout_constraintTop_toBottomOf="@+id/btn_martes" />
+
+    <Button
+        android:id="@+id/btn_viernes"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="VIERNES"
+        android:textColor="@color/black"
+        style="@style/EstiloBoton"
+        app:layout_constraintStart_toStartOf="@+id/btn_miercoles"
+        app:layout_constraintTop_toBottomOf="@+id/btn_miercoles" />
+
+    <Button
+        android:id="@+id/btn_sabado"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="SABADO"
+        android:textColor="@color/black"
+        style="@style/EstiloBoton"
+        app:layout_constraintEnd_toEndOf="@+id/btn_jueves"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jueves" />
+
+    <Button
+        android:id="@+id/btn_domingo"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="DOMINGO"
+        android:textColor="@color/black"
+        style="@style/EstiloBoton"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sabado"
+        app:layout_constraintStart_toStartOf="@+id/btn_viernes"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viernes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

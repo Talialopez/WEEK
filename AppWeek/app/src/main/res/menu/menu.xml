@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/contacto"
+            android:title="Contacto" />
+        <item
+            android:id="@+id/politica_privacidad"
+            android:title="Politica de Privacidad" />
+        <item
+            android:id="@+id/Reporte"
+            android:title="Reporte" />
+        <item
+            android:id="@+id/CerrarSesion"
+            android:title="Cerrar sesion" />
+    </group>
+</menu>

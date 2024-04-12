@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_general" />
+
+    <TextView
+        android:id="@+id/titulo_calendario4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calendario"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_calendario4"
+        app:srcCompat="@drawable/circulo" />
+
+    <TextView
+        android:id="@+id/añadir_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Editar imagen"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/nombre_ejercicio"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/caja_texto_naranja_claro"
+        android:hint="Nombre del ejercicio"
+        android:text=""
+        android:padding="7dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="start|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/añadir_imagen" />
+
+    <TextView
+        android:id="@+id/equipamiento"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/caja_texto_naranja_claro"
+        android:hint="Equipamiento"
+        android:text=""
+        android:padding="7dp"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/nombre_ejercicio"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_ejercicio" />
+
+    <TextView
+        android:id="@+id/brazos"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/caja_texto_naranja_claro"
+        android:text="Brazos"
+        android:gravity="start|center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="7dp"
+        app:layout_constraintStart_toStartOf="@+id/equipamiento"
+        app:layout_constraintTop_toBottomOf="@+id/equipamiento" />
+
+    <TextView
+        android:id="@+id/biceps"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/caja_texto_naranja_claro"
+        android:gravity="start|center"
+        android:padding="7dp"
+        android:text="Biceps"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/brazos"
+        app:layout_constraintTop_toBottomOf="@+id/brazos" />
+
+    <Button
+        android:id="@+id/btn_guardar_ejercicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton_naranja"
+        android:text="GUARDAR"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biceps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

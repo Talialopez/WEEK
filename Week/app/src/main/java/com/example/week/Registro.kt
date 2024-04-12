@@ -10,19 +10,32 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Registro : AppCompatActivity() {
 
-    private lateinit var dbHelper: BaseDatosWeek
+    private lateinit var dbHelper: BaseDatosWeek // Asegúrate de que BaseDatosWeek es el nombre correcto de tu clase
 
-    fun registrarUsuario() {
-        val correo = findViewById<EditText>(R.id.editTextCorreo).text.toString()
-        val contraseña = findViewById<EditText>(R.id.editTextContraseña).text.toString()
-        val nombreUsuario = findViewById<EditText>(R.id.editTextUser).text.toString()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.registro)
 
-        val passwordRegex = Regex("^(?=.*\\d{6,})(?=.*[a-z])(?=.*[A-Z]).{8,}\$")
+        dbHelper = BaseDatosWeek(this)
+
+        val btnRegistrar: Button = findViewById(R.id.continuar) // Confirma que 'continuar' es el ID correcto de tu botón
+        btnRegistrar.setOnClickListener {
+            registrarUsuario()
+        }
+    }
+
+    private fun registrarUsuario() {
+        val correo = findViewById<EditText>(R.id.editTextCorreo).text.toString().trim()
+        val contraseña = findViewById<EditText>(R.id.editTextContraseña).text.toString().trim()
+        val nombreUsuario = findViewById<EditText>(R.id.editTextUser).text.toString().trim()
+
+        // Expresión regular ajustada para la validación de la contraseña
+        val passwordRegex = Regex("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$")
         if (!passwordRegex.matches(contraseña)) {
             Toast.makeText(
                 this,
-                "La contraseña debe tener al menos seis números, una letra mayúscula, una letra minúscula.",
-                Toast.LENGTH_SHORT
+                "La contraseña debe tener al menos 8 caracteres, incluyendo un número, una letra mayúscula y una letra minúscula.",
+                Toast.LENGTH_LONG
             ).show()
             return
         }
@@ -32,7 +45,6 @@ class Registro : AppCompatActivity() {
         if (correoCursor.count > 0) {
             Toast.makeText(this, "El correo ya está registrado.", Toast.LENGTH_SHORT).show()
             correoCursor.close()
-            db.close()
             return
         }
         correoCursor.close()
@@ -41,41 +53,27 @@ class Registro : AppCompatActivity() {
         if (usuarioCursor.count > 0) {
             Toast.makeText(this, "El nombre de usuario ya está en uso.", Toast.LENGTH_SHORT).show()
             usuarioCursor.close()
-            db.close()
             return
         }
         usuarioCursor.close()
 
         try {
             val dbWrite = dbHelper.writableDatabase
-
             val values = ContentValues().apply {
                 put("CORREO", correo)
                 put("NOMBRE", nombreUsuario)
                 put("PASSWORD", contraseña)
             }
 
-            val newRowId = dbWrite.insert("usuarios", null, values)
-
+            dbWrite.insert("usuarios", null, values)
             dbWrite.close()
 
+            // Redirigir a ConfirmarRegistro u otra actividad según el flujo de tu app
             val intent = Intent(this, ConfirmarRegistro::class.java)
             startActivity(intent)
-
+            Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
             Toast.makeText(this, "Error al registrar el usuario.", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.registro)
-
-        dbHelper = BaseDatosWeek(this)
-
-        val btnRegistrar: Button = findViewById(R.id.continuar)
-        btnRegistrar.setOnClickListener {
-            registrarUsuario()
         }
     }
 }

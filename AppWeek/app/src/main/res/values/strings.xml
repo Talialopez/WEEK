@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texto_terminos">Yo acepto los <font color="#FDB74E">términos</font> y la
+        <font color ="#FDB74E">política de privacidad</font></string>
+    <string name="introduccion">¡Te damos la bienvenida a <font color="#FDB74E">WEEK</font>!</string>
+    <string name="introduccion2"> Para comenzar, necesitamos algunos detalles tuyos para personalizar tu experiencia. Por favor,
+    completa los siguientes campos con tu información personal:</string>
+</resources>

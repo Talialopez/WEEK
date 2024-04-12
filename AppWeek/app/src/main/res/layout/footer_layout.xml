@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/footer"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:onClick="irAShareList"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="8dp"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/hogar" />
+
+
+    <ImageView
+        android:onClick="irASaved"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/peso" />
+
+
+    <ImageView
+        android:onClick="irAFilter"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/perfil" />
+
+</LinearLayout>
